@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jakes Website</title>
+  <link rel="stylesheet" href="/design/softwareDev.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="navbar">
+        <div class="navbar__container">
+           <a href="/home.html" id="navbar__logo">
+            <img src="/images/JakeFrenchProfile.png" alt="Logo" class="navbar__logo-img" />Jake French</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pages/aboutme.html" class="navbar__links">About Me</a>
+                </li>
+                <li class="navbar__btn"> 
+                    <a href="/pages/contactme.html" class="button">Connect With Me!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-education" aria-label="Page Introduction">
+    <div class="hero-bg fade-bg active"></div>
+    <div class="hero-bg fade-bg"></div>
+    <h1>Software Development</h1>
+    <button class="hero-arrow left" id="arrow-left" aria-label="Previous slide">&lt;</button>
+    <button class="hero-arrow right" id="arrow-right" aria-label="Next slide">&gt;</button>
+  </section>
+
+  <!-- Main Content -->
+  <main class="education-section" role="main">
+    <article class="education-card" tabindex="0" aria-labelledby="job-title-1">
+      <h2 id="job-title-1">Fast Enterprises, Denver CO</h2>
+      <p>
+        <strong>Title:</strong> Software Developer<br />
+        <strong>Duration:</strong> August 2023 – June 2025
+      </p>
+      <p>
+        As part of a ground up product launch, I became a core developer on a brand new, enterprise level Child Support application. This system is designed to serve both child support professionals and the general public - including parents (obligors and obligees). I worked end-to-end on its development, helping translate real world government workflows into secure, scalable, and user friendly software.
+      </p>
+      <ul class="uni-description" aria-label="Job Responsibilities">
+        <li>Led development of full-stack features in C#, Java, and SQL within a collaborative Agile team focused on continuous delivery and rapid iteration.</li>
+        <li>Built and optimized data migration tools to convert legacy records into the new format, enabling seamless onboarding of entire state agencies.</li>
+        <li>Redesigned how Social Security Numbers were stored and processed using advanced encryption and tokenization, significantly elevating system wide privacy compliance.</li>
+        <li>Identified and resolved more than 200+ system level bugs during integration testing, improving system stability and becoming the team’s go to debugging resource.</li>
+        <li>Wrote highly efficient backend SQL queries to support large scale reporting and real time data visualization used by both internal staff and government officials.</li>
+        <li>Collaborated cross functionally with UI/UX designers, QA testers, and client stakeholders to build features that directly serve both agency workers and citizens.</li>
+        <li>Championed clean code standards and version control practices across the development team, leading peer reviews and contributing to long term maintainability.</li>
+      </ul>
+  </article>
+
+
+    <article class="education-card" tabindex="0" aria-labelledby="company-info">
+      <h2 id="company-info">What is Fast Enterprises?</h2>
+      <p>Fast Enterprises develops and implements large-scale software solutions for government agencies. Their systems are used to manage functions like tax processing, motor vehicle registration, unemployment insurance, and child support enforcement. FAST specializes in replacing outdated legacy systems with modern, configurable software that improves efficiency, automates workflows, and ensures secure data management.</p>
+    </article>
+  </main>
+
+  <script src="/javascript/softwareDev.js"></script>
+</body>
+</html>

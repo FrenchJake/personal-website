@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jakes Website</title>
+  <link rel="stylesheet" href="/design/projects.css" />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/home.html" id="navbar__logo">
+        <img src="/images/JakeFrenchProfile.png" alt="Logo" class="navbar__logo-img" />Jake French</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/home.html" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="/pages/aboutme.html" class="navbar__links">About Me</a>
+        </li>
+        <li class="navbar__btn"> 
+          <a href="/pages/contactme.html" class="button">Connect With Me!</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero-education" aria-label="Page Introduction">
+    <div class="hero-bg fade-bg active"></div>
+    <div class="hero-bg fade-bg"></div>
+    <h1>Projects</h1>
+    <button class="hero-arrow left" id="arrow-left" aria-label="Previous slide">&lt;</button>
+    <button class="hero-arrow right" id="arrow-right" aria-label="Next slide">&gt;</button>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="education-section">
+    <div class="education-card">
+      <h2>Professor & TA Scheduling System</h2>
+      <p>
+        <strong>Technology:</strong> React Native<br/>
+        <strong>Company:</strong> University of Alabama
+      </p>
+      <div class="uni-description">
+        <ul>
+          <li>Redesigned and rebuilt the internal scheduling system used by the College of Business at the University of Alabama.</li>
+          <li>Conducted interviews with professors and TAs to gather requirements and pain points with the previous system.</li>
+          <li>Built a prototype that improved calendar functionality, streamlined availability input, and reduced scheduling conflicts.</li>
+          <li>Reduced administrative workload by introducing automated checks and conflict resolution logic.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="education-card">
+      <h2>Built Personal Website</h2>
+      <p>
+        <strong>Technology:</strong> HTML, JavaScript, & CSS
+      </p>
+      <div class="uni-description">
+        <ul>
+          <li>Designed and developed a responsive personal website from scratch to serve as both a digital resume and a project portfolio.</li>
+          <li>Implemented a clean and modern UI theme inspired by professional enterprise websites, with animated SVG backgrounds and smooth scroll effects.</li>
+          <li>Utilized modular CSS and JavaScript for better maintainability and mobile responsiveness.</li>
+          <li>Tested across multiple devices and browsers to ensure a consistent user experience and accessibility compliance.</li>
+          <li><a href="https://github.com/FrenchJake" target="_blank" rel="noopener noreferrer">View source code</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="/javascript/projects.js"></script>
+</body>
+</html>

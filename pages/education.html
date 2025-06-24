@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jakes Website</title>
+  <link rel="stylesheet" href="/design/eduction.css"/>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <nav class="navbar">
+        <div class="navbar__container">
+           <a href="/home.html" id="navbar__logo">
+            <img src="/images/JakeFrenchProfile.png" alt="Logo" class="navbar__logo-img"/>Jake French</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pages/aboutme.html" class="navbar__links">About Me</a>
+                </li>
+                <li class="navbar__btn"> 
+                    <a href="/pages/contactme.html" class="button">Connect With Me!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero-education">
+    <div class="hero-bg fade-bg active"></div>
+    <div class="hero-bg fade-bg"></div>
+    <h1>Education & Certifications</h1>
+    <button class="hero-arrow left" id="arrow-left">&lt;</button>
+    <button class="hero-arrow right" id="arrow-right">&gt;</button>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education-section">
+    <div class="education-card">
+      <h2>University of Alabama, Tuscaloosa</h2>
+      <p>
+        <strong>Degree:</strong> B.S. Commerce – Business Administration<br />
+        <strong>Major:</strong> Management Information Systems<br />
+        <strong>Specialization:</strong> Business Communications<br />
+        <strong>Graduated:</strong> May 2023
+      </p>
+      <p>
+        Through hands on coursework in software development, data architecture, and business systems, I built a strong technical foundation that supports the work I do today.
+      </p>
+      <p>
+        During my time at Alabama, I worked on several impactful projects, including a full redesign of the internal scheduling system for the College of Business.
+      <a href="/pages/projects.html"> See full project details</a>
+      </p>
+
+      <div>
+        <span class="badge">President’s List</span>
+        <span class="badge">Dean's List</span>
+        <span class="badge">National Merit Scholar</span>
+        <span class="badge">AIMS Member (Alabama Information Management Society)</span>
+        <span class="badge">Founder: $125 for 100</span>
+        <span class="badge">Kevin Caines Award for Sportsmanship</span>
+      </div>
+    </div>
+    
+    <div class="education-card">
+      <h2>Certifications</h2>
+      <p>
+        I'm currently pursuing cloud-based knowledge through AWS and constantly seeking new tools and technologies to grow professionally.
+      </p>
+      <div>
+        <span class="badge">AWS Cloud Practitioner – In Progress</span>
+        <span class="badge">Google Data Analytics – Planned</span>
+      </div>
+    </div>
+
+  </section>
+  <script src="/javascript/education.js"></script>
+
+</body>
+</html>

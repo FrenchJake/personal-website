@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jake French | About Me</title>
+  <link rel="stylesheet" href="/design/aboutme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+        <div class="navbar__container">
+           <a href="/home.html" id="navbar__logo">
+            <img src="/images/JakeFrenchProfile.png" alt="Logo" class="navbar__logo-img" />Jake French</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/home.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/pages/aboutme.html" class="navbar__links">About Me</a>
+                </li>
+                <li class="navbar__btn"> 
+                    <a href="/pages/contactme.html" class="button">Connect With Me!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+  <!-- About Me Section -->
+  <section class="aboutme-section">
+    <div class="aboutme-container">
+      <div class="aboutme-image">
+        <img src="/images/aboutme/JakeFrenchHeadshot.jpg" alt="Jake French Headshot" />
+      </div>
+      <div class="aboutme-content">
+        <h1>About Me</h1>
+        <p>My name is Jake French, a 24 year old software developer from Chicago, Illinois. I earned my Bachelor’s degree in Management Information Systems from the Culverhouse College of Business at the University of Alabama, where I focused on the intersection of technology, communication, and business operations.</p>
+        <p>For the past two years, I’ve worked as a Software Developer at Fast Enterprises in Denver, Colorado. In this role, I contributed to the full stack development of enterprise applications for government agencies, specifically for the Child Support system. I led efforts in System Integration Testing, where I uncovered and resolved more software bugs than any other developer on the team - earning a reputation as a go to resource for debugging. I also engineered backend data tools, optimized SQL queries for large scale reporting, and played a central role in ensuring data security through UI masking and encryption strategies for sensitive information like Social Security numbers.</p>
+        <p>What drives me is not only building scalable, user focused systems, but also solving challenging problems. Especially during high stakes testing phases where attention to detail and quick iteration are essential.</p>
+        <p>Before Fast Enterprises, I held internships at Kirkland & Ellis and MAX Digital in Chicago. At Kirkland & Ellis, I partnered with the IT department on internal tools and data accessibility, while also supporting legal research for litigation teams. At MAX Digital, I enhanced and modernized dealership data systems for over 500 auto clients, improving data usability across both legacy and modern platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Skills Section -->
+  <section class="skills-modern">
+    <div class="skills-container">
+      <h2>Skills & Technologies</h2>
+      <div class="skills-columns">
+        <div class="skills-column">
+          <h3>Languages</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Frameworks & Libraries</h3>
+          <ul>
+            <li>React</li>
+            <li>.NET</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h3>Tools & Platforms</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MS Systems</li>
+            <li>Google Workspace</li>
+            <li>Adobe XD</li>
+            <li>Slack</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Resume Section -->
+  <section class="resume-section">
+    <div class="resume-container">
+      <h2>My Resume</h2>
+      <a href="/documents/JakobFrenchResume.pdf" target="_blank" download>
+        <img src="/images/aboutme/Resume.jpg" alt="Resume Preview" class="resume-preview" />
+      </a>
+      <p class="resume-download-text">Click download full PDF</p>
+    </div>
+  </section>
+  
+  <footer id="footer" class="footer__container">
+            <div class="footer__content">
+                <div class="footer__contact">
+                <h2>Contact Me</h2>
+                <a href="mailto:jakecfrench@gmail.com">
+                    <i class="fas fa-envelope"></i> jakecfrench@gmail.com
+                </a>
+                <a href="#" onclick="copyPhone(event)">
+                    <i class="fas fa-phone"></i> (224) - 548 - 1264
+                </a>
+                </div>
+
+                <div class="footer__social">
+                <h2>Connect</h2>
+                <a
+                    href="https://www.linkedin.com/in/jakefrench/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a
+                    href="https://github.com/FrenchJake"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <a href="/" class="footer__logo">
+                <i class="fas fa-gem"></i> Jake French
+                </a>
+                <p class="website__rights">© Jake French 2025. All rights reserved.</p>
+            </div>
+    </footer>
+
+
+  <script src="/javascript/aboutme.js"></script>
+</body>
+</html>

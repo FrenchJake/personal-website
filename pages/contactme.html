@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jake French | Contact Me</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/design/contactme.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init({ publicKey: "b0ridrq6DbORMUJs1" });
+
+      const form = document.getElementById("contact-form");
+      const statusEl = document.getElementById("form-status");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const params = { email, subject, message };
+
+        emailjs.send("service_1232728", "template_y3hoejg", params)
+          .then(() => {
+            form.reset();
+            statusEl.textContent = "Your message has been sent successfully!";
+            statusEl.style.color = "green";
+          })
+          .catch((err) => {
+            console.error("EmailJS Error:", err);
+            statusEl.textContent = "Failed to send message. Please try again.";
+            statusEl.style.color = "red";
+          });
+      });
+    });
+  </script>
+
+  <style>
+    /* Inline style in case external CSS is not loaded */
+    #form-status {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <!-- SVG Particle Background -->
+  <svg id="animated-bg" preserveAspectRatio="xMidYMid slice"></svg>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/home.html" id="navbar__logo">
+        <img src="/images/JakeFrenchProfile.png" alt="Logo" class="navbar__logo-img" />Jake French
+      </a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="/home.html" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="/pages/aboutme.html" class="navbar__links">About Me</a></li>
+        <li class="navbar__btn"><a href="/pages/contactme.html" class="button">Connect With Me!</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Contact Section -->
+  <main class="main">
+    <section class="contact-container" aria-label="Contact form section">
+      <h1>Contact Me</h1>
+      <form id="contact-form" method="POST" novalidate>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" maxlength="1000" placeholder="Your message here..." required></textarea>
+
+        <button type="submit" class="main__btn">Submit</button>
+        <div id="form-status" role="alert" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Additional Scripts -->
+  <script src="/javascript/svgBackground.js"></script>
+</body>
+</html>
